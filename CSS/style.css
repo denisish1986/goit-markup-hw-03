@@ -1,0 +1,33 @@
+/*
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-list {
+  display: flex;
+  padding-left: 200px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+address {
+  display: flex;
+}
+*/
