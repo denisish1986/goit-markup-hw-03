@@ -16,8 +16,9 @@
 }
 body {
   background-color: #e5e5e5;
+
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
-  font-family: 'Open Sans', sans-serif;
 }
 
 .list {
@@ -28,7 +29,7 @@ body {
   list-style-type: none;
   text-decoration: none;
 }
-
+/* SECTION HEADER */
 header {
   background-color: var(--sometimes-white-text-color);
 }
@@ -38,15 +39,15 @@ header {
   color: var(--accent-text-color);
 }
 .logo {
-  color: var(--sometimes-black-text-color);
-  font-weight: 700;
-  letter-spacing: 0.03em;
   font-family: Raleway;
-  font-size: 24px;
+  font-style: normal;
   font-weight: bold;
-  list-style-type: none;
-  text-decoration: none;
-  padding-left: 200px;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  left: 215px;
+  top: 24px;
+  color: var(--sometimes-black-text-color);
 }
 .logo-studio-part:hover,
 .logo-studio-part:focus {
@@ -80,6 +81,8 @@ header {
 
 /* END NAV BUTTONS IN HEADER */
 
+/* END SECTION HEADER */
+
 /* SECTION HERO */
 .section-hero {
   background-color: #2f303a;
@@ -89,13 +92,13 @@ header {
 
 /*  TITLE IN SECTION HERO */
 .section-title-hero {
-  list-style-type: none;
-  text-decoration: none;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--sometimes-white-text-color);
 }
 /* END TITLE IN SECTION HERO */
@@ -109,9 +112,9 @@ header {
   color: var(--titel-text-color);
 }
 .hero-button {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   color: var(--sometimes-white-text-color);
@@ -120,7 +123,6 @@ header {
 
 /* DETAILS SECTION */
 .section-title-details {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -132,7 +134,6 @@ header {
 
 /* OUR SPECIFICATION */
 .section-title-specification {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -149,7 +150,6 @@ header {
   background-color: #f5f4fa;
 }
 .team-section-title {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -159,7 +159,6 @@ header {
   color: var(--titel-text-color);
 }
 .name-developer {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -168,7 +167,6 @@ header {
   color: var(--titel-text-color);
 }
 .description-developer {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -179,15 +177,15 @@ header {
 
 /* LOGO WEBSTUDIO FOOTER */
 .logo-footer {
-  color: var(--sometimes-white-text-color);
-  font-weight: 700;
-  letter-spacing: 0.03em;
   font-family: Raleway;
-  font-size: 24px;
-  line-height: 1.291;
+  font-style: normal;
   font-weight: bold;
-  list-style-type: none;
-  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  left: 215px;
+  top: 24px;
+  color: var(--sometimes-white-text-color);
 }
 .logo-footer:hover,
 .logo-footer:focus {
@@ -203,7 +201,6 @@ footer {
   background-color: #2f303a;
 }
 .address-text-description {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -216,7 +213,6 @@ footer {
   color: var(--accent-text-color);
 }
 .footer-contacts-mail {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -229,7 +225,6 @@ footer {
   color: var(--accent-text-color);
 }
 .footer-contacts-tel {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -244,32 +239,31 @@ footer {
 /* MAIN CONTAINER PRODUCTS */
 
 /* PRODUCT BUTTON */
-
 .active-button:hover,
 .active-button:focus {
   background-color: var(--accent-text-color);
   color: var(--sometimes-white-text-color);
 }
 .active-button {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.733;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--titel-text-color);
+
   background-color: #f5f4fa;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  color: var(--titel-text-color);
 }
 /* END PRODUCT BUTTON */
 
 /* EXAMPLES PROJECT */
 .examples-project-title {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -278,7 +272,6 @@ footer {
   color: var(--titel-text-color);
 }
 .description-item {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
