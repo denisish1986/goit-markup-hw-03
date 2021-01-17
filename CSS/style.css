@@ -8,15 +8,16 @@
   }
   */
 :root {
+  --rgba-color-for-tel-mail: rgba(255, 255, 255, 0.6);
+  --button-background-color: #f5f4fa;
   --sometimes-black-text-color: #000000;
   --primary-text-color: #757575;
   --titel-text-color: #212121;
   --accent-text-color: #2196f3;
   --sometimes-white-text-color: #ffffff;
+  --background-color-footer-section-hero: #2f303a;
 }
 body {
-  background-color: #e5e5e5;
-
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
 }
@@ -34,14 +35,10 @@ header {
   background-color: var(--sometimes-white-text-color);
 }
 /* HEADER LOGO WEBSTUDIO */
-.logo:hover,
-.logo:focus {
-  color: var(--accent-text-color);
-}
+
 .logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -49,27 +46,32 @@ header {
   top: 24px;
   color: var(--sometimes-black-text-color);
 }
-.logo-studio-part:hover,
-.logo-studio-part:focus {
-  color: var(--accent-text-color);
-}
+
 .logo-studio-part {
   color: var(--accent-text-color);
 }
 /* END HEAD LOGO WEBSTUDIO */
 
 /* NAV BUTTONS IN HEADER */
-.page-nav .link:focus,
-.page-nav .link:hover {
+.nav-link {
+  color: var(--titel-text-color);
+}
+.nav-link:focus,
+.nav-link:hover {
   color: var(--accent-text-color);
 }
-.nav-link {
-  font-style: normal;
+
+.page-nav .nav-link.current {
+  color: var(--accent-text-color);
+}
+
+.nav-link-mail,
+.nav-link-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--titel-text-color);
+  color: var(--primary-text-color);
 }
 
 /* CONTACTS BUTTONS IN HEADER  */
@@ -85,14 +87,11 @@ header {
 
 /* SECTION HERO */
 .section-hero {
-  background-color: #2f303a;
-  padding-bottom: 40px;
+  background-color: var(--background-color-footer-section-hero);
 }
-/* END SECTION HERO */
 
 /*  TITLE IN SECTION HERO */
 .section-title-hero {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -113,7 +112,6 @@ header {
 }
 .hero-button {
   font-family: inherit;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -123,8 +121,7 @@ header {
 
 /* DETAILS SECTION */
 .section-title-details {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
@@ -134,24 +131,25 @@ header {
 
 /* OUR SPECIFICATION */
 .section-title-specification {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
 }
-
+.section-title-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
 /* END OUR SPECIFICATION */
 
 /* OUR TEAM SECTION */
-.team-section {
-  background-color: #f5f4fa;
-}
+
 .team-section-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
@@ -159,7 +157,6 @@ header {
   color: var(--titel-text-color);
 }
 .name-developer {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.189;
@@ -167,8 +164,7 @@ header {
   color: var(--titel-text-color);
 }
 .description-developer {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.189;
   letter-spacing: 0.03em;
@@ -177,9 +173,8 @@ header {
 
 /* LOGO WEBSTUDIO FOOTER */
 .logo-footer {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -187,9 +182,9 @@ header {
   top: 24px;
   color: var(--sometimes-white-text-color);
 }
-.logo-footer:hover,
-.logo-footer:focus {
-  color: var(--accent-text-color);
+.footer {
+  color: var(--sometimes-white-text-color);
+  background-color: var(--background-color-footer-section-hero);
 }
 .logo-web-part-footer {
   color: var(--accent-text-color);
@@ -197,12 +192,11 @@ header {
 /* END LOGO WEBSTUDIO FOOTER */
 
 /* FOOTER CONTACTS LINKS + ADDRESS DESCRIPTION */
-footer {
-  background-color: #2f303a;
+.address {
+  font-style: normal;
 }
 .address-text-description {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -213,24 +207,22 @@ footer {
   color: var(--accent-text-color);
 }
 .footer-contacts-mail {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--rgba-color-for-tel-mail);
 }
 .footer-contacts-tel:hover,
 .footer-contacts-tel:focus {
   color: var(--accent-text-color);
 }
 .footer-contacts-tel {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--rgba-color-for-tel-mail);
 }
 /* --------------- PORTFOLIO --------------- */
 
@@ -246,34 +238,26 @@ footer {
 }
 .active-button {
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.733;
   text-align: center;
   letter-spacing: 0.03em;
-
-  background-color: #f5f4fa;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  background-color: var(--button-background-color);
   color: var(--titel-text-color);
 }
 /* END PRODUCT BUTTON */
 
 /* EXAMPLES PROJECT */
 .examples-project-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--titel-text-color);
 }
 .description-item {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
