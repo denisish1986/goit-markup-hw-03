@@ -54,6 +54,10 @@ header {
 
 /* NAV BUTTONS IN HEADER */
 .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
   color: var(--titel-text-color);
 }
 .nav-link:focus,
@@ -121,7 +125,7 @@ header {
 
 /* DETAILS SECTION */
 .section-title-details {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
@@ -131,7 +135,7 @@ header {
 
 /* OUR SPECIFICATION */
 .section-title-specification {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
@@ -147,9 +151,12 @@ header {
 /* END OUR SPECIFICATION */
 
 /* OUR TEAM SECTION */
+.team-section {
+  background-color: var(--button-background-color);
+}
 
 .team-section-title {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
