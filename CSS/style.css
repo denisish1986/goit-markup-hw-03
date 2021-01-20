@@ -17,6 +17,15 @@
   --sometimes-white-text-color: #ffffff;
   --background-color-footer-section-hero: #2f303a;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
