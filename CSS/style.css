@@ -49,13 +49,13 @@ body {
 /* SECTION HEADER */
 
 header {
+  border-bottom: 1px solid var(--border-color-for-header);
   background-color: var(--sometimes-white-text-color);
 }
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color-for-header);
 }
 .header-navigation {
   display: flex;
@@ -67,7 +67,8 @@ header {
   margin-right: 93px;
 }
 .logo,
-.logo-studio-part {
+.logo-web-part {
+  color: var(--accent-text-color);
   padding-top: 24px;
   padding-bottom: 25px;
 }
