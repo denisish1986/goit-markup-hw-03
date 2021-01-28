@@ -31,6 +31,8 @@ body {
   display: block;
 }
 .list {
+  padding-left: 0px;
+  padding-right: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   list-style-type: none;
@@ -391,9 +393,8 @@ header {
 
   font-style: normal;
 }
-.address-contact-list,
-.contact-telmail-link {
-  margin-top: 0px;
+.address-contact-list > .contact-telmail-link {
+  margin-top: 9px;
   padding-left: 0px;
 }
 
