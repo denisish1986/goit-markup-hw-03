@@ -44,8 +44,8 @@ body {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* SECTION HEADER */
 
@@ -335,7 +335,7 @@ header {
   margin-left: 30px;
 }
 .name-developer {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 500;
   font-size: 16px;
@@ -344,7 +344,10 @@ header {
   color: var(--titel-text-color);
 }
 .description-developer-container {
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .description-developer {
   margin-top: 10px;
@@ -390,7 +393,7 @@ header {
 }
 .address-contact-list,
 .contact-telmail-link {
-  margin-top: 9px;
+  margin-top: 0px;
   padding-left: 0px;
 }
 
